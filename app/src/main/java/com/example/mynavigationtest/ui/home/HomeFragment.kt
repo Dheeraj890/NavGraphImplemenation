@@ -59,7 +59,7 @@ class HomeFragment : Fragment() {
         root?.button_to_notification?.setOnClickListener(View.OnClickListener {
 
 
-            it.findNavController().navigate(R.id.action_navigation_home_to_navigation_notifications)
+            it.findNavController().navigate(HomeFragmentDirections.actionNavigationHomeToNavigationNotifications(10,isOnline = true))
         })
         return root
     }

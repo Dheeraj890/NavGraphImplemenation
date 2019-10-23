@@ -45,6 +45,7 @@ class NotificationsFragment : Fragment() {
             textView.text = it
         })
 
+        Toast.makeText(activity, arguments?.get("noteId").toString(),Toast.LENGTH_SHORT).show()
 
         button.setOnClickListener(View.OnClickListener {
 
@@ -57,6 +58,7 @@ class NotificationsFragment : Fragment() {
         })
         return root
     }
+
 
 
     fun ProgressBar.startJobOrCancel(job : Job){
